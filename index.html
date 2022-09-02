@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,50 +9,65 @@
     <!-- tailwind and daisyUi  -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <style>
-       
-    </style>
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/2cc8ded989.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header class="container mx-auto ">
         <div class="navbar bg-base-100 container mx-auto my-4">
             <div class="flex-1">
-              <a class="btn btn-primary normal-case text-xl">Today</a>
-              <a class="btn btn-ghost normal-case text-xl">Information Page</a>
+                <a class="btn btn-primary normal-case text-xl">Today</a>
+                <a class="btn btn-ghost normal-case text-xl">Information Page</a>
             </div>
             <div class="flex-none gap-8">
-              <div>
-                <h1 class="text-primary text-xl font-semibold">News</h1>     
-              </div>
-              <div class="dropdown dropdown-end ">
-                <label tabindex="0" class="btn btn-ghost rounded-btn">Blogs</label>
-                <ul tabindex="0" class="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-52 mt-4">
-                  <li><a>Item 1</a></li> 
-                  <li><a>Item 2</a></li>
-                  <li><a>Item 3</a></li>
-                  <li><a>Item 4</a></li>
-                </ul>
-              </div>
-              <div>
+                <div>
+                    <h1 class="text-primary text-xl font-semibold">News</h1>
+                </div>
+                <div class="dropdown dropdown-end ">
+                    <label tabindex="0" class="btn btn-ghost rounded-btn">Blogs</label>
+                    <ul tabindex="0" class="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-52 mt-4">
+                        <li><a>Item 1</a></li>
+                        <li><a>Item 2</a></li>
+                        <li><a>Item 3</a></li>
+                        <li><a>Item 4</a></li>
+                    </ul>
+                </div>
+                <div>
                     <div class="w-10 ">
                         <img class="rounded-full" src="https://placeimg.com/80/80/people" />
                     </div>
-              </div>
+                </div>
             </div>
-          </div><hr>
-          
+        </div>
+        <hr>
+
     </header>
 
     <main>
-       <section  class="container mx-auto">
-        <div class="container mx-auto pl-12 py-6 font-semibold text-1xl text-gray-400">
-            <ul id="menu-list" class=" grid grid-cols-8 ">
+        <section class="container mx-auto">
+            <div class="container mx-auto pl-12 py-6 font-semibold text-1xl text-gray-400">
+                <ul id="menu-list" class=" grid grid-cols-8 ">
 
-            </ul>
-        </div>
-              <h1 class="border py-5 rounded-lg pl-8 text-2xl font-semibold mx-10">4 items found for category Entertainment</h1>
-            </section>
-        
+                </ul>
+            </div>
+            <h1 id="text-view" class="border py-5 rounded-lg pl-8 text-2xl font-semibold mx-10"></h1>
+        </section>
+        <!-- display information  -->
+        <section class="container mx-auto mt-4 ">
+            <div id="list-container" class="mb-4">
+                <!-- <div class="card card-side bg-base-300 shadow-xl p-8">
+                    <img class="w-60" src="https://placeimg.com/200/280/arch" alt="Movie">
+                    <div class="card-body">
+                        <h2 class="card-title">New movie is released!</h2>
+                        <p>Click the button to watch on Jetflix app.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Watch</button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
     </main>
 
 
@@ -61,4 +77,5 @@
 
     <script src="news.js"></script>
 </body>
+
 </html>
