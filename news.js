@@ -56,11 +56,11 @@ const displayInformation = (data) => {
         //  console.log(news)
         const div = document.createElement('div')
         div.innerHTML = `
-        <div class="card card-side bg-base-300 p-8 mb-6 mx-10">
-        <img class="w-60" src="${news.image_url}" alt="">
-        <div class="card-body">
-            <h2 class="card-title text-3xl pb-4 font-semibold">${news.title}</h2>
-            <p>${news.details.slice(0,400)}...</p>
+        <div class="card card-side bg-base-300 p-8 mb-6 mx-10 grid sm:grid-cols-1 md:grid-cols-2">
+             <img class="w-full" src="${news.image_url}" alt="">
+            <div class="card-body">
+                <h2 class="card-title text-3xl pb-4 font-semibold">${news.title}</h2>
+                <p>${news.details.slice(0,400)}...</p>
             <div class="card-actions justify-around pt-12">
                 <div class="flex gap-4">
                 <img class="rounded-full w-10" src="${news.author.img}" />
