@@ -46,7 +46,7 @@ const displayCategoryIdLoad = (categoryId) => {
 
 const displayInformation = (data) => {
      console.log(data)
-     
+
          data.sort((a, b) => {
              return b.total_view - a.total_view;
              });
@@ -171,7 +171,3 @@ displayCategoryIdLoad(4)
 loadNews()
 
 
-
-// datas.sort((a, b) => {
-//     return b.propertyName - a.propertyName;
-//     });
