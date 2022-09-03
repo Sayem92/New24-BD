@@ -15,11 +15,27 @@ const displayCategory = (categories) => {
         <li onclick="displayCategoryIdLoad(${category.category_id})">${category.category_name}</li>
         `;
         menuList.appendChild(li)
+      
     });
+   
 }
+
+
+// spinner ar jonno----------
+const toggleSpinner = isLoading =>{
+    const loaderSection = document.getElementById('loader')
+    if(isLoading){
+        loaderSection.classList.remove('hidden')
+    }
+    else{
+        loaderSection.classList.add('hidden')
+    }
+}
+
 
 const displayCategoryIdLoad = (categoryId) => {
     // console.log(categoryId)
+    toggleSpinner(true)
     const url = `https://openapi.programming-hero.com/api/news/category/0${categoryId}`
     fetch(url)
         .then(res => res.json())
@@ -31,6 +47,7 @@ const displayCategoryIdLoad = (categoryId) => {
 const displayInformation = (data) => {
     // console.log(data)
     // console.log(data.length)
+    toggleSpinner(false)
     const textView = document.getElementById("text-view")
     textView.innerHTML = `${data.length ? data.length : 'No'} items found for category Entertainment`;
     const containerlist = document.getElementById('list-container')
