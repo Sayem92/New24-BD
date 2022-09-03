@@ -11,6 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <!-- font awesome  -->
     <script src="https://kit.fontawesome.com/2cc8ded989.js" crossorigin="anonymous"></script>
+    <style>
+        
+    </style>
 </head>
 
 <body>
@@ -26,11 +29,50 @@
                 </div>
                 <div class="dropdown dropdown-end ">
                     <label tabindex="0" class="btn btn-ghost rounded-btn">Blogs</label>
-                    <ul tabindex="0" class="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-52 mt-4">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 2</a></li>
-                        <li><a>Item 3</a></li>
-                        <li><a>Item 4</a></li>
+                    <ul tabindex="0" class="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-96 mt-4">
+                        <li><a>
+                         Q-1 :  What is the differences between var, let, and const ?<br><br>
+
+                            var <br>
+                            1. The scope of a var variable is functional scope.<br>
+                            2. It can be updated and re-declared into the scope.<br>
+                            3. It can be declared without initialization.<br>
+                            4. It can be accessed without initialization as its default value is “undefined”.<br>
+                            5. hoisting done , with initializing as ‘default’ value<br><br>
+
+                           let <br>
+                            1. The scope of a let variable is block scope.<br>
+                            2. It can be updated but cannot be re-declared into the scope.<br>
+                            3. It can be declared without initialization.<br>
+                            4. It cannot be accessed without initialization otherwise it will give ‘referenceError’.<br>
+                            5. Hoisting is done , but not initialized (this is the reason for error when we access the let variable before declaration/initialization<br><br>
+
+                           const <br>
+                            1. The scope of a const variable is block scope.<br>
+                            2. It cannot be updated or re-declared into the scope.<br>
+                            3. It cannot be declared without initialization.<br>
+                            4. It cannot be accessed without initialization, as it cannot be declared without initialization.<br>
+                            5. Hoisting is done, but not initialized (this is the reason for error when we access the const variable before declaration/initialization<br>
+                        </a></li>
+                        <li><a>
+                          Q-2 :  The Difference Between Regular Functions and Arrow Functions ? <br><br>   
+                            Regular functions created using function declarations or expressions are constructible and callable. Since regular functions are constructible, they can be called using the new keyword. However, the arrow functions are only callable and not constructible, i.e arrow functions can never be used as constructor functions. <br>
+                        </a></li>
+                        <li><a>
+                            Q-3 : What is the different map,foreach,filter and find ?<br>
+
+                            map vs forEach---- <br>
+                            The forEach() method does not create a new array based on the given array. The map() method creates an entirely new array. The forEach() method returns “undefined“. The map() method returns the newly created array according to the provided callback function. <br><br>
+
+                            filter vs find ----- <br>
+                            The find() method is used to find all the descendant elements of the selected element. It finds the element in the DOM tree by traversing through the root to leaf. The filter() method is used to filters all the elements and returns the element that matches and the element that do not match are removed. <br>
+                        </a></li>
+                        <li><a>
+                         Q-4 :   Why is the template strand important ?<br><br>
+                         
+                            The template strand serves as the DNA template for transcription, which is the first step of gene expression. RNA polymerase adds complementary nucleotides to the nucleotides that are encoded in the template strand in order to form the primary RNA transcript.
+
+                        </a></li>
                     </ul>
                 </div>
                 <div>
