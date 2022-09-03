@@ -21,9 +21,9 @@
         <div class="navbar bg-base-100 container mx-auto my-4">
             <div class="flex-1">
                 <a class="btn btn-primary normal-case text-xl">Today</a>
-                <a class="btn btn-ghost normal-case text-xl">Information Page</a>
+                <a class="btn btn-ghost normal-case text-xl">Information</a>
             </div>
-            <div class="flex-none gap-8">
+            <div class="flex-none sm:gap-0 md:gap-8">
                 <div>
                     <h1 class="text-primary text-xl font-semibold">News</h1>
                 </div>
@@ -87,13 +87,14 @@
     </header>
 
     <main>
+
         <section class="container mx-auto">
             <div class="container mx-auto pl-12 py-6 font-semibold text-1xl text-gray-400">
-                <ul id="menu-list" class=" grid grid-cols-8 ">
+                <ul id="menu-list" class=" grid sm:grid-cols-1 md:grid-cols-8">
 
                 </ul>
             </div>
-            <h1 id="text-view" class="border py-5 rounded-lg pl-8 text-2xl font-semibold mx-10"></h1>
+            <h1 id="text-view" class="border py-6 rounded-lg pl-8 text-2xl font-semibold mx-10"></h1>
             <!-- spinner  -->
             <progress id="loader" class="progress w-full py-1 my-4 mx-10 hidden"></progress>
         </section>
@@ -104,6 +105,7 @@
 
             </div>
         </section>
+
         <!-- display modal  -->
         <section class="container mx-auto mt-4 ">
 
@@ -119,7 +121,7 @@
                         <!-- details  -->
                         <p id="details-all" class="py-4"></p>
                         <div class="modal-action">
-                            <label for="my-modal-6" class="btn">Close!</label>
+                            <label for="my-modal-6" class="btn">Close</label>
                         </div>
                     </div>
                 </div>
