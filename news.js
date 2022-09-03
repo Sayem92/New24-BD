@@ -84,7 +84,20 @@ const displayModal = (detailsAll) =>{
     const titleText = document.getElementById('title-text')
     titleText.innerText = detailsAll.title;
 
-   
+    const authorInfo = document.getElementById('author-info')
+    authorInfo.innerHTML =`
+                 <div class="flex gap-4 ">
+                                 <img class="rounded-full w-10" src="${detailsAll.author.img}" />
+                        <div class="pl-6">
+                                <p>${detailsAll.author.name ? detailsAll.author.name : 'No found'}</p>
+                                <p>${detailsAll.author.published_date}</p>
+                        </div>
+                   
+                         <div  class="pl-16">
+                                 <h4 class="font-semibold text-2xl"><i class="fa-thin fa-eye"></i> ${detailsAll.total_view ? detailsAll.total_view : 'No'} M</h4>
+                         </div>
+                 </div>
+    `;
 
     const infoAll = document.getElementById('details-all')
     infoAll.innerText = detailsAll.details;
