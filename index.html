@@ -16,9 +16,9 @@
     </style>
 </head>
 
-<body>
+<body class="bg-gray-200">
     <header class="container mx-auto">
-        <div class="navbar bg-base-400 bg-info  container mx-auto my-4">
+        <div class="navbar bg-base-400 mb-4">
             <div class="flex-1">
                 <a class="btn btn-primary normal-case text-xl">News24</a>
                 <a class="btn btn-ghost normal-case text-xl">BD </a>
@@ -118,19 +118,20 @@
                 </div>
             </div>
         </div>
-        <hr>
+        <hr class="bg-gray-300 py-1">
 
     </header>
 
     <main>
 
         <section class="container mx-auto">
-            <div class="container mx-auto pl-12 py-6 font-semibold text-1xl text-gray-400">
-                <ul id="menu-list" class=" grid sm:grid-cols-1 md:grid-cols-8">
+            <!-- display news  -->
+            <div class="container mx-auto pl py-6 font-semibold text-1xl text-gray-400">
+                <ul id="menu-list" class=" grid sm:grid-cols-1 md:grid-cols-8  py-4 rounded-lg">
 
                 </ul>
             </div>
-            <h1 id="text-view" class="border py-6 rounded-lg pl-8 text-2xl font-semibold mx-10"></h1>
+            <h1 id="text-view" class="border py-6 rounded-lg pl-8 text-2xl font-semibold bg-white mx-10"></h1>
             <!-- sort by view  -->
             <div class="mx-10 flex  md:justify-between pt-4">
                 <div class="flex">
@@ -180,6 +181,11 @@
 
         </section>
     </main>
+    
+
+    <footer class="bg-slate-400 py-12">
+        <p class="text-center">Copyright 2021 News24 BD</p>
+    </footer> 
 
 
 

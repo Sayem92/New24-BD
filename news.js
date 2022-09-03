@@ -12,7 +12,7 @@ const displayCategory = (categories) => {
         // console.log(category)
         const li = document.createElement('li')
         li.innerHTML = `
-        <li class="hover:text-primary hover:font-bold" onclick="displayCategoryIdLoad(${category.category_id})">${category.category_name}</li>
+        <li class="hover:text-primary hover:font-bold pl-4" onclick="displayCategoryIdLoad(${category.category_id})">${category.category_name}</li>
         `;
         menuList.appendChild(li)
       
@@ -49,15 +49,15 @@ const displayInformation = (data) => {
     // console.log(data.length)
     toggleSpinner(false)
     const textView = document.getElementById("text-view")
-    textView.innerHTML = `${data.length ? data.length : 'No'} items found for category Entertainment`;
+    textView.innerHTML = `${data.length ? data.length + ' items found for category Entertainment' : 'No items found '}`;
     const containerlist = document.getElementById('list-container')
     containerlist.innerHTML = '';
     
     data.forEach(news => {
-         console.log(news)
+        //  console.log(news)
         const div = document.createElement('div')
         div.innerHTML = `
-        <div class="card card-side bg-base-300 p-8 mb-6 mx-10 grid sm:grid-cols-1 md:grid-cols-2">
+        <div class="card card-side bg-white p-8 mb-6 mx-10 grid sm:grid-cols-1 md:grid-cols-2">
              <img class="w-full" src="${news.image_url}" alt="">
             <div class="card-body">
                 <h2 class="card-title text-3xl pb-4 font-semibold">${news.title}</h2>
@@ -161,6 +161,8 @@ const displayModal = (detailsAll) =>{
 
 }
 
+
+displayCategoryIdLoad(4)
 
 loadNews()
 
